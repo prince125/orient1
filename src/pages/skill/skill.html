@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Skill 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="text-align: center; align-items:center">
+    <h2> Enter the skills required to reach your goal</h2>
+    <div>
+      <ion-item>
+          <ion-label color="primary" floating>Skill 1</ion-label>
+          <ion-input type ="text" [(ngModel)]="uskill.skill1"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label color="primary" floating>Skill 2</ion-label>
+            <ion-input type="text" [(ngModel)]="uskill.skill2"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+              <ion-label color="primary" floating>Skill 3</ion-label>
+              <ion-input type="text" [(ngModel)]="uskill.skill3"></ion-input>
+            </ion-item>
+      </div>
+             
+             
+            </div>
+        
+</ion-content>
+<ion-footer align='center'>
+    <button ion-button round color="secondary" (click)="Add()"> Next</button>
+</ion-footer>

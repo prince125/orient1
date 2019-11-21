@@ -1,0 +1,54 @@
+<!--
+  Generated template for the EventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Add Activity</ion-title>
+    </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content padding>
+    <form >
+      <ion-list>
+      <ion-item>
+        <ion-label floating>Notes</ion-label>
+        <ion-input type="text" [(ngModel)]="b1d.message1" name="message1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Start Date</ion-label>
+        <ion-datetime displayFormat="DD MMM YYYY" pickerFormat="MM/DD/YYYY" max="2050-12-31" [(ngModel)]="b1d.startdate1" name="startdate1"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>By when</ion-label>
+        <ion-datetime displayFormat="DD MMM YYYY" pickerFormat="MM/DD/YYYY" min = "2019-03-12" max="2050-12-31" [(ngModel)]="b1d.enddate1" name="enddate1"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Frequency</ion-label>
+        <ion-input type="text" [(ngModel)]="b1d.frequency1" name="frequency1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Time per Day</ion-label>
+        <ion-input type="text" [(ngModel)]="b1d.day1" name="day1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Time per Week</ion-label>
+        <ion-input type="text" [(ngModel)]="b1d.week1" name="week1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Time per Month</ion-label>
+        <ion-input type="text" [(ngModel)]="b1d.month1" name="month1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button type="submit" full round (click)="Add()">Save</button>
+      </ion-item>
+      </ion-list>
+    </form>
+    </ion-content>
+  
+  

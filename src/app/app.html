@@ -1,0 +1,117 @@
+<ion-menu [content]="content" side="right">
+        <ion-content padding>
+                <div>
+                 <ion-item> 
+                  <ion-label>
+                  <b> Account</b>
+                  </ion-label>
+                </ion-item>
+                
+                <ion-list>
+                  <ion-item>
+                      <ion-label>Turn notifications on</ion-label>
+                      <ion-toggle></ion-toggle>
+                   </ion-item>
+                  <ion-item>
+                    <ion-label menuClose (click)="navToStatus() "> Activity status</ion-label>
+                    </ion-item>
+                </ion-list>
+                </div>
+                
+                <div>
+                <ion-item>
+                  <ion-label>
+                      <b>Privacy</b> 
+                  </ion-label>
+                  </ion-item>
+                  <ion-list>
+                    <ion-item>
+                  <ion-label menuClose (click)="Password()" >Password</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label menuClose (click)="navToPrivacy()">
+                      Privacy policy
+                    </ion-label>
+                    </ion-item>
+                    
+                </ion-list>
+                </div>
+                
+                <div>
+                
+                  <ion-item>
+                      <ion-label><b>About</b></ion-label>
+                  </ion-item>
+                <ion-list>
+                  <ion-item>
+                  <ion-label menuClose (click)="navToAbout()">
+                   About us      
+                  </ion-label>  
+                  </ion-item>
+                  <ion-item>
+                    <ion-label menuClose (click)="navToTerms()">
+                  Terms of use
+                  </ion-label>
+                  </ion-item>
+                  </ion-list>
+                </div>
+                
+                  <div>  
+                    <ion-item>
+                    <ion-label>
+                    <b> Share on social accounts </b>  
+                  </ion-label>
+                    </ion-item>
+                  <ion-list>
+
+                  <ion-item padding>
+                    <ion-icon name="logo-facebook" (click)="shareFacebook()"> Share on Facebook</ion-icon>
+                   
+                  </ion-item>
+                 
+                    <ion-item padding>
+                          <ion-icon name ="logo-whatsapp" (click)="shareWhatsApp()">  Share on WhatsApp</ion-icon>
+                         
+                    </ion-item>
+
+                        <ion-item padding>
+                          <ion-icon name ="logo-twitter" (click)="shareTwitter()">  Share on Twitter</ion-icon>
+                         
+                        
+                        </ion-item> 
+                    </ion-list>
+                  </div>
+                    
+                  <div>
+                      <ion-item>
+                          <ion-label>
+                          <b> Support </b>  
+                        </ion-label>
+                          </ion-item>
+                          <ion-list>
+                            <ion-item>
+                            <ion-label menuClose (click)="navToHelp()">  
+                              Help
+                            </ion-label>
+                            </ion-item>
+                          </ion-list>
+                  </div>
+                
+                  <div>
+                      <ion-item>
+                          <ion-label>
+                          <b> Logins </b>  
+                        </ion-label>
+                          </ion-item>
+                          <ion-list>
+                            <ion-item>
+                            <ion-label (click)="newacc()">  
+                              Add another account
+                              
+                            </ion-label>
+                            </ion-item>
+                          </ion-list>
+                  </div>
+                  </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content ></ion-nav>

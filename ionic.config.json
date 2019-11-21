@@ -1,0 +1,8 @@
+{
+  "name": "orienting",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "771bff4c"
+}

@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Administrator
+      </ion-title>
+    </ion-navbar>
+    <button ion-button round color="danger" (click)="logout()" end>Logout</button>
+  </ion-header>
+  
+  <ion-content padding>
+   <h1 style="font-size: 130%; font-family: Georgia, 'Times New Roman', Times, serif;text-align: center;margin-top: 10%;"> Welcome Administrator</h1>
+    
+      <div class="happy">
+      <button ion-button color="stup" full block (click)="password()"> <ion-icon name="lock"> OTP </ion-icon></button>
+      <button ion-button color="stup" full block (click)="addusers()" style="margin-top:5%"> <ion-icon name="person-add"> Add User</ion-icon></button>
+    </div>
+  
+   </ion-content>

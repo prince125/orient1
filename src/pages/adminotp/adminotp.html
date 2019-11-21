@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar color="stup">
+      <ion-title >OTP</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+     <h5 style="text-align:center"> Please enter a password </h5>
+   
+        <ion-input type="password" [(ngModel)]="otp.randomNo" placeholder="Enter password" style="align-self: center">  </ion-input>
+        
+        
+          <button ion-button (click)="savedb()" color="secondary" block > SUBMIT</button>
+       
+  </ion-content>

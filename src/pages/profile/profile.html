@@ -1,0 +1,72 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title><h2><b>{{displayName}}</b></h2></ion-title>
+  </ion-navbar>
+  <div class="profile-image" (click)="editimage()" align='center'>
+      <img src="{{avatar}}">
+    </div>
+
+</ion-header>
+
+
+<ion-content padding>
+
+   
+      <ion-list align='center'>
+          <ion-item >
+              <ion-label align='center'><b><i>{{fname}} {{lname}}</i></b> </ion-label>
+            </ion-item>
+            <ion-item >
+                <ion-label align='center'><b><i>{{colname}}</i></b><button ion-button icon-only (click)="editcol()" small float-right clear>
+                    <ion-icon name="create" ></ion-icon>
+                  </button></ion-label>
+              </ion-item> 
+                <ion-item >
+                    <ion-label align='center'><b><i>{{cname}}</i></b><button ion-button icon-only (click)="editcourse()" small float-right clear>
+                        <ion-icon name="create" ></ion-icon>
+                      </button></ion-label>
+                  </ion-item>
+        
+      </ion-list>
+
+      <h3>Your Favourite Personalities</h3>
+      <ion-list>
+         
+      
+          <ion-item>
+              
+              <ion-label align='center'><ion-icon name="happy" ></ion-icon><b><i>{{p1}}</i></b>
+                  
+               </ion-label>
+          </ion-item>
+      
+          <ion-item>
+              <ion-label align='center'><ion-icon name="happy" ></ion-icon><b><i>{{p2}}</i></b>
+               </ion-label>
+          </ion-item>
+      
+          <ion-item>
+              <ion-label align='center'>
+                  <ion-icon name="happy" ></ion-icon><b><i>{{p3}}</i></b>
+                </ion-label>
+          </ion-item>
+      </ion-list>
+     
+     
+      <div class="spacer" style="height: 10px;"></div>
+      <div align='center'>
+        <button ion-button round color="danger" (click)="logout()">Logout</button>
+      </div>
+    
+
+</ion-content>

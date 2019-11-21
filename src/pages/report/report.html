@@ -1,0 +1,84 @@
+<!--
+  Generated template for the ReportPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons end>
+          <button ion button icon-only menuToggle right>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title align='center'>Reports</ion-title>
+  
+</ion-toolbar>
+
+</ion-header>
+  
+  <ion-content padding>
+  
+  <ion-grid fixed >
+      <ion-row fixed class="row-header" >
+          <ion-col col-2 class="col">Behavioral Changes</ion-col>
+          <ion-col col-2 class="col">Message</ion-col>
+          <ion-col col-2 class="col">Start Date</ion-col>
+          <ion-col col-2 class="col">End Date</ion-col>
+      </ion-row>
+  
+      <ion-row class="row" >
+          <ion-col col-2 class="col" >{{message1}}</ion-col>
+        <ion-col col-2 class="col" >{{behaviour1}}</ion-col>
+        <ion-col col-2 class="col" >{{startdate1}}</ion-col>
+        <ion-col col-2 class="col" >{{enddate1}}</ion-col>
+      </ion-row>
+  
+      <ion-row class="row" >
+          <ion-col col-2 class="col">{{message2}}</ion-col>
+        <ion-col col-2 class="col" >{{behaviour2}}</ion-col>
+        <ion-col col-2 class="col" >{{startdate2}}</ion-col>
+        <ion-col col-2 class="col" >{{enddate2}}</ion-col>
+      </ion-row>
+  
+      <ion-row class="row" >
+          <ion-col col-2 class="col" >{{message3}}</ion-col>
+        <ion-col col-2 class="col" >{{behaviour3}}</ion-col>
+        <ion-col col-2 class="col" >{{startdate3}}</ion-col>
+        <ion-col col-2 class="col" >{{enddate3}}</ion-col>
+      </ion-row>
+    </ion-grid>	
+
+    <ion-grid fixed >
+        <ion-row fixed class="row-header" >
+            <ion-col col-2 class="col">Frequency</ion-col>
+            <ion-col col-2 class="col">Time per Day</ion-col>
+            <ion-col col-2 class="col">Time per Week</ion-col>
+            <ion-col col-2 class="col">Time per Month</ion-col>
+          </ion-row>
+
+         <ion-row class="row" >
+            <ion-col col-2 class="col">{{frequency1}}</ion-col>
+            <ion-col col-2 class="col">{{day1}}</ion-col>
+            <ion-col col-2 class="col">{{week1}}</ion-col>
+            <ion-col col-2 class="col" >{{month1}}</ion-col>
+           </ion-row>
+
+         <ion-row class="row" >
+            <ion-col col-2 class="col" >{{frequency2}}</ion-col>
+            <ion-col col-2 class="col" >{{day2}}</ion-col>
+            <ion-col col-2 class="col" >{{week2}}</ion-col>
+            <ion-col col-2 class="col" >{{month2}}</ion-col>
+           </ion-row>
+
+         <ion-row class="row" >
+            <ion-col col-2 class="col" >{{frequency3}}</ion-col>
+            <ion-col col-2 class="col" >{{day3}}</ion-col>
+            <ion-col col-2 class="col" >{{week3}}</ion-col>
+            <ion-col col-2 class="col">{{month3}}</ion-col>
+           </ion-row>
+
+     </ion-grid>
+  
+  </ion-content>

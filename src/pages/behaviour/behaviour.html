@@ -1,0 +1,50 @@
+<!--
+  Generated template for the BehaviourPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Behaviour</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div style="text-align: center; align-items:center">
+        <h2> Enter the Behaviourial changes you will need to take to reach your goal</h2>
+        <div>
+          <ion-item>
+              <ion-label color="secondary" floating>Skill-1- {{skill1}}</ion-label>
+              <ion-label color="dark" floating>Obstacle-1- {{obstacle1}}</ion-label>
+              <ion-label color="danger" floating>Exposure-1- {{exposure1}}</ion-label>
+              <ion-label color="primary" floating>Behaviour 1</ion-label>
+              <ion-input type ="text" [(ngModel)]="ube.behaviour1"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label color="secondary" floating>Skill-2- {{skill2}}</ion-label>
+                <ion-label color="dark" floating>Obstacle-2- {{obstacle2}}</ion-label>
+                <ion-label color="danger" floating>Exposure-2- {{exposure2}}</ion-label>
+                <ion-label color="primary" floating>Behaviour 2</ion-label>
+                <ion-input type="text" [(ngModel)]="ube.behaviour2"></ion-input>
+              </ion-item>
+          
+              <ion-item>
+                  <ion-label color="secondary" floating>Skill-3- {{skill3}}</ion-label>
+                  <ion-label color="dark" floating>Obstacle-3- {{obstacle3}}</ion-label>
+                  <ion-label color="danger" floating>Exposure-3- {{exposure3}}</ion-label>
+                  <ion-label color="primary" floating>Behaviour 3</ion-label>
+                  <ion-input type="text" [(ngModel)]="ube.behaviour3"></ion-input>
+                </ion-item>
+          </div>
+
+          
+  </div>
+</ion-content>
+<ion-footer align='center'>
+    <button ion-button round color="secondary" (click)="goda()"> Next</button>
+  </ion-footer>

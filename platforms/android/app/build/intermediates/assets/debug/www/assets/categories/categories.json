@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "slug": "Skills",
+      "title": "Skills",
+      "description": "Ask about your skills",
+      "background": "#0077ff",
+      "tags": [
+        {
+          "name": "Skill-1"
+        },
+        {
+          "name": "Skill-2"
+        },
+        {
+          "name": "Skill-3"
+        }
+      ]
+    },
+    {
+      "slug": "Obstacles",
+      "title": "Obstacles",
+      "description": "Ask about your Obstacles",
+      "background": "#F84C61",
+      "tags":[
+        {
+          "name": "Obstacle-1"
+        },
+        {
+          "name": "Obstacle-2"
+        },
+        {
+          "name": "Obstacle-3"
+        }
+      ]
+    },
+    {
+      "slug": "Exposure",
+      "title": "Exposure",
+      "description": "Ask about the exposure you require",
+      "background": "#16144A",
+      "tags": [
+        {
+            "name": "Exposure-1"
+        },
+        {
+            "name": "Exposure-2"
+        },
+        {
+          "name": "Exposure-3"
+      }
+      ]
+    },
+    {
+      "slug": "Behaviour",
+      "title": "Behaviour",
+      "description": "Ask about the behaviourial changes you will need to make",
+      "background": "#432B9C",
+      "tags": [
+        {
+            "name": "Behaviour-1"
+        },
+        {
+            "name": "Behaviour-2"
+        },
+        {
+          "name": "Behaviour-3"
+      }
+      ]
+    }
+  ]
+}

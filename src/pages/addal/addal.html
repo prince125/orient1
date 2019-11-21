@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add User</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div>
+    <ion-list >
+      <ion-item>  
+          <ion-input type="email" placeholder="E-Mail" [(ngModel)]="alumni.email"></ion-input>
+      </ion-item>
+      <ion-item>  
+        <ion-input type="passowrd" placeholder="Password" [(ngModel)]="alumni.password"></ion-input>
+    </ion-item>
+    <ion-item>  
+      <ion-input type="text" placeholder="Name" [(ngModel)]="alumni.displayName"></ion-input>
+  </ion-item>
+  <ion-item>  
+      <ion-input type="text" placeholder="Designation" [(ngModel)]="alumni.aldes"></ion-input>
+  </ion-item>
+  <ion-item>  
+      <ion-input type="text" placeholder="Specialization" [(ngModel)]="alumni.alskill"></ion-input>
+  </ion-item>
+      </ion-list>
+      <ion-item>
+        <button (click)='signup()'>Submit</button>
+      </ion-item>   
+  </div>
+</ion-content>

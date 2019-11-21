@@ -1,0 +1,40 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Obstacles</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div style="text-align: center; align-items:center">
+        <h2> Enter the Obstacles you may face in obtaining the skills you require.</h2>
+        <div>
+            
+          <ion-item>
+              <ion-label color="secondary" floating>Skill-1- {{skill1}}</ion-label>
+              <ion-label color="primary" floating>Obstacle 1</ion-label>
+              <ion-input type ="text" [(ngModel)]="uobs.obstacle1"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+                <ion-label color="secondary" floating>Skill-2- {{skill2}}</ion-label>
+                <ion-label color="primary" floating>Obstacle 2</ion-label>
+                <ion-input type="text" [(ngModel)]="uobs.obstacle2"></ion-input>
+              </ion-item>
+          
+              <ion-item>
+                  <ion-label color="secondary" floating>Skill-3- {{skill3}}</ion-label>
+                  <ion-label color="primary" floating>Obstacle 3</ion-label>
+                  <ion-input type="text" [(ngModel)]="uobs.obstacle3"></ion-input>
+                </ion-item>
+          </div>
+
+         
+  </div>
+</ion-content>
+<ion-footer align='center'>
+    <button ion-button round color="secondary" (click)="goex()"> Next</button>
+  </ion-footer>

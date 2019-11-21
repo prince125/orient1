@@ -1,0 +1,42 @@
+<!--
+  Generated template for the VisionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Vision</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 style="text-align: center; font-size: 130%">Your Vision</h1>
+
+
+
+
+  <h2 style="text-align: center; font-size: 130%">Why am I here?</h2>
+      
+  <ion-list>
+    <ion-item>
+      <ion-input type='text' [(ngModel)]="ugo.goal" placeholder="Why?" clearInput></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+
+        <ion-list>
+          <ion-item>
+            <ion-input type='text' [(ngModel)]="uvis.vision" placeholder="Your Vision goes here!" clearInput></ion-input>
+          </ion-item>
+        </ion-list>
+    
+
+</ion-content>
+<ion-footer align='center'>
+    <button ion-button round color="secondary" (click)='vigo()'>Next</button>
+  </ion-footer>

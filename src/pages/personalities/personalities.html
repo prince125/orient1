@@ -1,0 +1,34 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Personalities</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+<p><b>Who are some of the personalities you look up to?</b></p>
+
+<div>
+<ion-item>
+    <ion-label color="primary" floating>Personality 1</ion-label>
+    <ion-input type ="text" [(ngModel)]="currentuser.p1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="primary" floating>Personality 2</ion-label>
+      <ion-input type="text" [(ngModel)]="currentuser.p2"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary" floating>Personality 3</ion-label>
+        <ion-input type="text" [(ngModel)]="currentuser.p3"></ion-input>
+      </ion-item>
+</div>
+
+
+</ion-content>
+<ion-footer align='center'>
+    <button ion-button color="secondary" (click)="go()">Next</button>
+  </ion-footer>

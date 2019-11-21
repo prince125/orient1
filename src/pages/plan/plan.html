@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar>
+      <div style=" text-align: center"> 
+      <ion-title>Set your targets!</ion-title>
+    </div>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+    <h2 style="font-size:20px; text-align:center;">Schedule the time for the Behaviourial changes you need to make. </h2>
+<h1>Click on the 'Eye icons' to plan your progress!</h1>
+  <ion-list>
+     
+      <ion-item>
+          <ion-label color="primary" >Behaviour-1-{{behaviour1}}</ion-label>
+          <button item-right ion-button icon-only tooltip="This is Priority 1" positionV="top" (click)="addEvent()" >
+              <ion-icon name="eye"> </ion-icon>
+            </button>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label color="primary" >Behaviour-2-{{behaviour2}}</ion-label>
+          <button item-right ion-button icon-only tooltip="This is Priority 2" positionV="top" (click)="addEvent1()" >
+              <ion-icon name="eye"> </ion-icon>
+            </button>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label color="primary" >Behaviour-3-{{behaviour3}}</ion-label>
+          <button item-right ion-button icon-only tooltip="This is Priority 3" positionV="top" (click)="addEvent2()" >
+              <ion-icon name="eye"> </ion-icon>
+            </button>
+      </ion-item>
+  
+     
+    </ion-list>
+  
+   
+     
+  
+  </ion-content>
+  <ion-footer>
+      <button ion-button  (click)="submit()"
+      round color="secondary" >Finish</button>
+  </ion-footer>

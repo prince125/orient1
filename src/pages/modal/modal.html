@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+     
+    <ion-title style="margin-top:6%"><i>Quote</i></ion-title>
+    <div style="margin-left:60%; margin-top:-15%">
+            <button ion-button color="light"  size="small" (click)="share()">
+        <ion-icon  name="share-alt"></ion-icon>
+    </button>
+    </div>
+        <div style="margin-left:80%; margin-top:-18%">
+      <button ion-button color="light"  size="small" (click)="closePop()">
+        <ion-icon name="close"></ion-icon>
+    </button>
+    </div>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-modal">
+  {{randomQuoteIndex}}
+</ion-content>

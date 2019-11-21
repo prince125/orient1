@@ -1,0 +1,28 @@
+page-report {
+
+    .row-header .col {
+        background:grey;
+        text-align: center;
+    }
+
+    .col {
+        border: solid 1px black;
+        border-bottom-style: none;
+        border-right-style: none;
+        background:lightgrey;
+        text-align: center;
+        
+        
+    }
+    .col:last-child {
+        border-right: solid 1px black;
+        text-align: center;
+        
+    }    
+
+    .row:last-child .col {
+        border-bottom: solid 1px black;
+        text-align: center;
+        
+    }
+}

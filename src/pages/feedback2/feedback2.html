@@ -1,0 +1,17 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> Key Take Away (Activity 2)  </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-label color="primary"> Key Take Away </ion-label>
+    <ion-input type="text" placeholder= "Please enter your key takeaway's from this activity" [(ngModel)]="fb1.feedback"> </ion-input>
+    <ion-footer position>
+        <button ion-button full  round color="secondary" (click)="submit()"> Submit</button>
+      </ion-footer>
+</ion-content>
